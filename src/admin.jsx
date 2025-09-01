@@ -4,7 +4,7 @@ export default function Admin(){
     const[users,setUsers]=useState([]);
 
     useEffect(()=>{
-        axios.get('https://backendeg.pythonanywhere.com/admin')
+        axios.get('https://backendproject.pythonanywhere.comm/admin')
         .then(res=>setUsers(res.data))
         .catch(err=>console.error(err));
     },[]);
