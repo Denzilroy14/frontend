@@ -46,7 +46,7 @@ export default function Registration(){
     setMessage('Sorry! appoinments cannot be booked on selected date!');
     return;}
     try{
-      const response=await axios.post('https://backendeg.pythonanywhere.com/register',data);
+      const response=await axios.post('https://backendproject.pythonanywhere.com/register',data);
       setForm({
         name:'',
         age:'',
